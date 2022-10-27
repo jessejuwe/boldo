@@ -11,7 +11,7 @@
     }
 
     .section {
-      @apply py-8 px-8 md:px-20 block md:flex items-center justify-between z-30;
+      @apply py-8 mt-10 md:mt-[initial] px-8 md:px-20 block md:flex items-center justify-between z-30;
 
       .left-section {
         @apply max-w-xl;
