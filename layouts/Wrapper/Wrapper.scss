@@ -4,6 +4,6 @@
 
 @layer components {
   .app__wrap {
-    @apply w-full mx-auto flex flex-col items-center justify-center overflow-hidden;
+    @apply w-full overflow-hidden;
   }
 }

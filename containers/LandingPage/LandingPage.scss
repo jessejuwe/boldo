@@ -7,39 +7,39 @@
     @apply bg-primary h-screen relative;
 
     .ellipse {
-      @apply opacity-0 md:opacity-100 absolute z-10 right-0;
+      @apply opacity-0 lg:opacity-100 absolute z-10 right-0;
     }
 
     .section {
-      @apply py-8 mt-10 md:mt-[initial] px-8 md:px-20 block md:flex items-center justify-between z-30;
+      @apply py-8 mt-10 lg:mt-[initial] px-8 lg:px-20 block lg:flex items-center justify-between z-30;
 
       .left-section {
-        @apply max-w-xl;
+        @apply lg:max-w-xl;
 
         h2 {
-          @apply text-white mb-4 text-center md:text-start;
+          @apply text-white mb-4 text-center lg:text-start;
         }
 
         p {
-          @apply text-[#F1F1F1] mb-5 md:mb-10 mx-auto md:mx-[initial] text-center md:text-start;
+          @apply text-[#F1F1F1] mb-5 lg:mb-10 mx-auto lg:mx-[initial] text-center lg:text-start;
         }
 
         .lp-buttons {
-          @apply flex items-center justify-center md:justify-start space-x-3 md:space-x-6 mb-5 md:mb-[initial];
+          @apply flex items-center justify-center lg:justify-start space-x-3 lg:space-x-6 mb-5 lg:mb-[initial];
         }
       }
 
       .right-section {
-        @apply flex justify-center md:block z-20;
+        @apply flex justify-center lg:block z-20;
 
         img {
-          @apply w-[246.93px] h-[211.5px] md:w-[initial] md:h-[initial];
+          @apply w-[246.93px] h-[211.5px] lg:w-[initial] lg:h-[initial];
         }
       }
     }
 
     .logo-wall {
-      @apply px-8 md:px-20;
+      @apply px-8 lg:px-20;
     }
   }
 }

@@ -24,11 +24,11 @@
   }
 
   .btn--medium {
-    @apply py-1 px-5 text-sm md:py-2 md:px-10 md:text-lg rounded-3xl;
+    @apply py-1 px-5 text-sm lg:py-2 lg:px-10 lg:text-lg rounded-3xl;
   }
 
   .btn--large {
-    @apply py-2 px-7 text-base md:py-4 md:px-[56px] md:text-xl rounded-[56px];
+    @apply py-2 px-7 text-base lg:py-4 lg:px-[56px] lg:text-xl rounded-[56px];
   }
 
   .btn--mobile {
@@ -36,7 +36,7 @@
   }
 
   .btn--wide {
-    @apply py-[6px] px-8 text-base md:py-3 md:px-16 md:text-xl rounded-3xl;
+    @apply py-[6px] px-8 text-base lg:py-3 lg:px-16 lg:text-xl rounded-3xl;
   }
 
   .primary {

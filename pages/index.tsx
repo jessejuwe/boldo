@@ -15,7 +15,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/icon.png" />
       </Head>
 
-      <main className="w-full">
+      <main className="">
         <LandingPage />
         <Services />
         <Testimonials />

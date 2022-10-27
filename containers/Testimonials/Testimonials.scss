@@ -4,10 +4,10 @@
 
 @layer components {
   .testimonials {
-    @apply mt-14 md:mt-28 w-full px-10 md:px-20 bg-primary;
+    @apply mt-14 lg:mt-28 w-full px-10 lg:px-20 bg-primary;
 
     .testimonial-head {
-      @apply flex items-end justify-around pt-12 md:pt-24 pb-[36px] md:pb-[72px];
+      @apply flex items-end justify-around pt-12 lg:pt-24 pb-[36px] lg:pb-[72px];
 
       h2 {
         @apply max-w-3xl text-white;
@@ -17,7 +17,7 @@
         @apply flex items-center justify-center space-x-4;
 
         div {
-          @apply w-5 h-5 md:w-9 md:h-9 rounded-full bg-white flex items-center justify-center cursor-pointer hover:bg-secondary transition-all duration-300 ease-in-out;
+          @apply w-5 h-5 lg:w-9 lg:h-9 rounded-full bg-white flex items-center justify-center cursor-pointer hover:bg-secondary transition-all duration-300 ease-in-out;
 
           svg {
             @apply text-[#0A2640] text-sm;
@@ -27,29 +27,29 @@
     }
 
     .testimonial-list {
-      @apply flex flex-col md:flex-row items-center md:items-start justify-center space-y-3 md:space-y-[initial] md:space-x-6 pb-12 md:pb-24;
+      @apply flex flex-col lg:flex-row items-center lg:items-start justify-center space-y-3 lg:space-y-[initial] lg:space-x-6 pb-12 lg:pb-24;
 
       .testimonial-list-item {
-        @apply bg-white shadow-lg shadow-black/[0.12] rounded-xl w-[350px] odd:h-[161px] even:h-[197px] [&:nth-child(3)]:h-[179px] md:odd:h-[322px] md:even:h-[394px] md:[&:nth-child(3)]:h-[358px] p-5 md:p-10 md:hover:scale-105 transition-all duration-300 ease-in-out;
+        @apply bg-white shadow-lg shadow-black/[0.12] rounded-xl w-[350px] odd:h-[161px] even:h-[197px] [&:nth-child(3)]:h-[179px] lg:odd:h-[322px] lg:even:h-[394px] lg:[&:nth-child(3)]:h-[358px] p-5 lg:p-10 lg:hover:scale-105 transition-all duration-300 ease-in-out;
 
         h4 {
-          @apply font-openSans font-normal text-base md:text-2xl  text-black mb-5 md:mb-10;
+          @apply font-openSans font-normal text-base lg:text-2xl  text-black mb-5 lg:mb-10;
         }
 
         .testimonial-list-item-info {
           @apply flex items-center justify-self-start;
 
           .testimonial-list-item-info-img {
-            @apply w-[24px] h-[24px] md:w-[58px] md:h-[58px] rounded-full mr-2 md:mr-4;
+            @apply w-[24px] h-[24px] lg:w-[58px] lg:h-[58px] rounded-full mr-2 lg:mr-4;
           }
 
           .testimonial-list-item-info-detail {
             h3 {
-              @apply font-bold text-sm md:text-base md:leading-8 text-primary;
+              @apply font-bold text-sm lg:text-base lg:leading-8 text-primary;
             }
 
             p {
-              @apply font-normal text-xs md:text-sm md:leading-8 text-primary;
+              @apply font-normal text-xs lg:text-sm lg:leading-8 text-primary;
             }
           }
         }
@@ -58,31 +58,31 @@
   }
 
   .customer-connect {
-    @apply w-full px-10 md:px-20 mt-[62px] md:mt-[124px] mb-[77px] md:mb-[154px] bg-white flex flex-col items-center;
+    @apply w-full px-10 lg:px-20 mt-[62px] lg:mt-[124px] mb-[77px] lg:mb-[154px] bg-white flex flex-col items-center;
 
     img {
-      @apply w-[550px] h-[201.5px] md:w-[1100px] md:h-[403px] mb-7 md:mb-14;
+      @apply w-[550px] h-[201.5px] lg:w-[1100px] lg:h-[403px] mb-7 lg:mb-14;
     }
 
     .connect-info {
-      @apply flex flex-col md:flex-row items-center md:items-start justify-around w-full;
+      @apply flex flex-col lg:flex-row items-center lg:items-start justify-around w-full;
 
       h3 {
-        @apply max-w-lg mb-5 md:mb-[initial] text-center md:text-start;
+        @apply max-w-lg mb-5 lg:mb-[initial] text-center lg:text-start;
       }
 
       .connect-info-detail {
-        @apply space-y-[24.5px] md:space-y-[49px];
+        @apply space-y-[24.5px] lg:space-y-[49px];
 
         div {
-          @apply flex items-center justify-between w-full gap-[8px] md:gap-[84px];
+          @apply flex items-center justify-between w-full gap-[8px] lg:gap-[84px];
 
           p {
-            @apply font-openSans font-normal text-base md:text-xl md:leading-8;
+            @apply font-openSans font-normal text-base lg:text-xl lg:leading-8;
           }
 
           svg {
-            @apply text-[#0A2640] text-sm md:text-base w-4 h-4 md:w-7 md:h-7 cursor-pointer hover:text-secondary transition-all duration-100 ease-in-out;
+            @apply text-[#0A2640] text-sm lg:text-base w-4 h-4 lg:w-7 lg:h-7 cursor-pointer hover:text-secondary transition-all duration-100 ease-in-out;
           }
         }
       }
