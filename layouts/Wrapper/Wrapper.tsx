@@ -3,13 +3,13 @@ import { Footer, Navbar } from '../../exports/exports';
 
 type Props = { children: ReactNode };
 
-const Navigation = (props: Props) => {
+const Wrapper = (props: Props) => {
   return (
-    <div className="w-full">
-      <main className="w-full">{props.children}</main>
+    <div className="app__wrap">
+      <main className="">{props.children}</main>
       <Footer />
     </div>
   );
 };
 
-export default Navigation;
+export default Wrapper;
