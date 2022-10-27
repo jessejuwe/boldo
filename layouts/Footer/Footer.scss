@@ -4,15 +4,17 @@
 
 @layer components {
   .footer {
+    @apply h-screen lg:h-[initial];
+
     .footer-head {
-      @apply bg-primary relative md:rounded-xl mb-[22px] md:mb-[84px] md:mx-20;
+      @apply bg-primary relative lg:rounded-xl mb-[22px] lg:mb-[84px] lg:mx-20;
 
       img {
-        @apply absolute right-0 z-10 md:rounded-tr-xl;
+        @apply absolute right-0 z-10 lg:rounded-tr-xl;
       }
 
       .footer-head-text {
-        @apply z-30 flex items-center justify-center px-[80px] md:px-[242px] pt-6 md:pt-[72px] pb-4 md:pb-[50px];
+        @apply z-30 flex items-center justify-center px-[80px] lg:px-[242px] pt-6 lg:pt-[72px] pb-4 lg:pb-[50px];
 
         h2 {
           @apply z-30 text-white mx-auto text-center;
@@ -20,36 +22,40 @@
       }
 
       .footer-form {
-        @apply flex flex-col md:flex-row items-center justify-center gap-3 md:gap-6 px-[149px] md:px-[298px] pb-[37px] md:pb-[74px] z-30;
+        @apply flex flex-col lg:flex-row items-center justify-center gap-3 lg:gap-6 px-[149px] lg:px-[298px] pb-[37px] lg:pb-[74px] z-30;
 
         input {
-          @apply font-openSans text-base md:text-xl leading-8 font-normal rounded-[240px] border-2 border-solid border-white py-1 px-5 md:py-[6px] md:px-10 text-black outline-none z-30;
+          @apply font-openSans text-base lg:text-xl leading-8 font-normal rounded-[240px] border-2 border-solid border-white py-1 px-5 lg:py-[6px] lg:px-10 text-black outline-none z-30;
+        }
+
+        button {
+          @apply z-30;
         }
       }
     }
 
     .footer-tail {
-      @apply pt-[50px] md:pt-[100px] pb-[58.5px] md:pb-[117px] px-[46.5px] md:px-[93px] flex flex-col-reverse md:flex-row items-center md:items-start justify-around gap-[85px] md:gap-[170px];
+      @apply pt-[20px] lg:pt-[100px] pb-[58.5px] lg:pb-[117px] px-[46.5px] lg:px-[93px] flex flex-col-reverse lg:flex-row items-center lg:items-start justify-around gap-[50px] lg:gap-[170px];
 
       .footer-detail {
-        @apply flex flex-col items-center justify-center md:block;
+        @apply flex flex-col items-center justify-center lg:block;
 
         img {
-          @apply mb-5 md:mb-10 w-[81.31px] h-[21px] md:w-[162.62px] md:h-[42px];
+          @apply mb-5 lg:mb-10 w-[81.31px] h-[21px] lg:w-[162.62px] lg:h-[42px];
         }
 
         p {
-          @apply max-w-sm mb-8 md:mb-16 text-center md:text-left;
+          @apply max-w-sm mb-4 lg:mb-16 text-center lg:text-left;
         }
       }
 
       .footer-info {
-        @apply flex items-center justify-center gap-12 md:gap-24;
+        @apply flex items-center justify-center gap-12 lg:gap-24;
 
         .landings,
         .company,
         .resources {
-          @apply flex flex-col items-start space-y-4 md:space-y-8;
+          @apply flex flex-col items-start space-y-4 lg:space-y-8;
 
           p {
             @apply hover:text-primary cursor-pointer transition-all duration-300 ease-in-out;
