@@ -6,4 +6,4 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 A responsive web app template. This web app was built with Next.js, TailwindCSS & TypeScript.
 
 ## Visit
-
+https://boldoapp.vercel.app
