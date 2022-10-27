@@ -1,0 +1,53 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer components {
+  .btn {
+    @apply outline-none border-none cursor-pointer whitespace-nowrap font-openSans transition-all duration-300 font-bold;
+  }
+
+  .btn--primary {
+    @apply bg-primary text-white border-2 border-solid border-white;
+  }
+
+  .btn--secondary {
+    @apply bg-secondary text-primary border-2 border-solid border-[#69E6A6] hover:bg-white hover:border-white hover:text-primary;
+  }
+
+  .btn--outline {
+    @apply bg-transparent text-white border border-solid border-white hover:bg-white hover:text-primary;
+  }
+
+  .btn--outline-inverse {
+    @apply bg-transparent text-primary border border-solid border-primary hover:bg-primary hover:text-white;
+  }
+
+  .btn--medium {
+    @apply py-1 px-5 text-sm md:py-2 md:px-10 md:text-lg rounded-3xl;
+  }
+
+  .btn--large {
+    @apply py-2 px-7 text-base md:py-4 md:px-[56px] md:text-xl rounded-[56px];
+  }
+
+  .btn--mobile {
+    @apply text-center rounded-3xl no-underline text-2xl bg-transparent text-white py-3.5 px-5 border border-solid border-white transition-all duration-300 ease-out;
+  }
+
+  .btn--wide {
+    @apply py-[6px] px-8 text-base md:py-3 md:px-16 md:text-xl rounded-3xl;
+  }
+
+  .primary {
+    @apply bg-primary text-white border-2 border-solid border-primary hover:bg-secondary hover:border-secondary hover:text-primary rounded-[56px];
+  }
+
+  .secondary {
+    @apply bg-secondary text-white border-2 border-solid border-[#69E6A6] hover:bg-white hover:border-white hover:text-primary;
+  }
+
+  .white {
+    @apply bg-white text-primary hover:text-white border-2 border-solid border-white hover:bg-secondary hover:border-secondary;
+  }
+}

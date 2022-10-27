@@ -1,0 +1,45 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer components {
+  .landing__page {
+    @apply bg-primary h-screen relative;
+
+    .ellipse {
+      @apply opacity-0 md:opacity-100 absolute z-10 right-0;
+    }
+
+    .section {
+      @apply py-8 px-8 md:px-20 block md:flex items-center justify-between z-30;
+
+      .left-section {
+        @apply max-w-xl;
+
+        h2 {
+          @apply text-white mb-4 text-center md:text-start;
+        }
+
+        p {
+          @apply text-[#F1F1F1] mb-5 md:mb-10 mx-auto md:mx-[initial] text-center md:text-start;
+        }
+
+        .lp-buttons {
+          @apply flex items-center justify-center md:justify-start space-x-3 md:space-x-6 mb-5 md:mb-[initial];
+        }
+      }
+
+      .right-section {
+        @apply flex justify-center md:block z-20;
+
+        img {
+          @apply w-[246.93px] h-[211.5px] md:w-[initial] md:h-[initial];
+        }
+      }
+    }
+
+    .logo-wall {
+      @apply px-8 md:px-20;
+    }
+  }
+}

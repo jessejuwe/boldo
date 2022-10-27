@@ -1,0 +1,53 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer components {
+  .app__navbar {
+    @apply py-4 px-8 md:px-20 bg-primary flex flex-row items-center justify-between;
+
+    .app__logo {
+      @apply w-[81.31px] h-[21px] md:w-[162.62px] md:h-[42px];
+    }
+
+    .app__nav__list {
+      @apply hidden md:flex flex-row items-center justify-start gap-5 md:gap-10 z-20;
+
+      a {
+        @apply font-openSans text-white hover:text-secondary transition-all duration-300 ease-in-out text-sm md:text-base;
+      }
+
+      button {
+        @apply font-bold;
+      }
+    }
+
+    .app__navbar-menu {
+      @apply cursor-pointer md:hidden w-7 h-7 rounded-full relative flex justify-center items-center bg-secondary z-30;
+
+      svg {
+        @apply text-white w-[55%] h-[55%];
+      }
+
+      div {
+        @apply fixed inset-y-0 right-0 z-[5] p-4 w-4/5 h-screen flex justify-end items-end flex-col bg-primary shadow-lg shadow-primary;
+
+        svg {
+          @apply text-secondary w-7 h-7 mt-2 mb-12 mx-4;
+        }
+
+        ul {
+          @apply m-0 p-0 h-full w-full flex justify-start flex-col;
+
+          li {
+            @apply m-4;
+
+            a {
+              @apply font-semibold text-base uppercase text-gray-200 hover:text-secondary hover:scale-110 transition duration-300 ease-in;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer components {
+  .app__whitebg {
+    @apply bg-white;
+  }
+
+  .app__primarybg {
+    @apply bg-primary;
+  }
+
+  .app__secondarybg {
+    @apply bg-secondary;
+  }
+
+  .app__container {
+    @apply max-w-full m-0 large:max-w-[120rem] large:mx-auto;
+  }
+
+  .app__flex {
+    @apply flex justify-center items-center;
+  }
+
+  .app__wrapper {
+    @apply flex-1 w-full flex-col py-2 px-4 big:pt-32;
+  }
+
+  .copyright {
+    @apply w-full py-8 px-0 flex flex-row justify-center items-center;
+
+    p {
+      @apply uppercase text-gray-300;
+    }
+  }
+
+  .head-text {
+    @apply text-2xl md:text-5xl font-normal md:leading-[72px] large:text-[4rem] font-manrope;
+  }
+
+  .p-text {
+    @apply font-normal text-xs md:text-base md:leading-7 large:text-2xl font-openSans;
+  }
+
+  .light-text {
+    @apply font-normal text-base md:text-xl md:leading-8 text-[#777777] font-openSans;
+  }
+
+  .bold-text {
+    @apply font-bold text-base md:text-xl md:leading-9;
+  }
+
+  .heading {
+    @apply font-normal text-lg md:text-2xl md:leading-[36px] text-black font-openSans;
+  }
+
+  .heading-2 {
+    @apply font-normal text-2xl md:text-4xl md:leading-[56px] text-black font-manrope;
+  }
+
+  .app__navigation {
+    @apply hidden smallest:flex justify-center items-center flex-col p-4;
+
+    .app__navigation-dot {
+      @apply w-[10px] h-[10px] rounded-[50%] bg-primary m-2 transition-colors duration-200 ease-in-out hover:bg-switch-sky large:w-5 large:h-5;
+    }
+  }
+}
