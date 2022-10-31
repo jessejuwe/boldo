@@ -27,7 +27,7 @@
     }
 
     .testimonial-list {
-      @apply flex flex-col lg:flex-row items-center lg:items-start justify-center space-y-3 lg:space-y-[initial] lg:space-x-6 pb-12 lg:pb-24;
+      @apply flex flex-col lg:flex-row items-center lg:items-start justify-center space-y-3 lg:space-y-[initial] lg:gap-6 pb-12 lg:pb-24;
 
       .testimonial-list-item {
         @apply bg-white shadow-lg shadow-black/[0.12] rounded-xl w-[350px] odd:h-[161px] even:h-[197px] [&:nth-child(3)]:h-[179px] lg:odd:h-[322px] lg:even:h-[394px] lg:[&:nth-child(3)]:h-[358px] p-5 lg:p-10 lg:hover:scale-105 transition-all duration-300 ease-in-out;
